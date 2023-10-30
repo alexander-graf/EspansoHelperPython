@@ -171,7 +171,7 @@ def on_append_single(event):
     replace = replace_entry.GetValue()
 
     if trigger.strip() == "" or replace.strip() == "":
-        return  # Do nothing if either field is empty
+        return  # Do nothing if either field is empty.
 
     data = "- trigger: {}\n  replace: {}\n".format(trigger, replace)
 
